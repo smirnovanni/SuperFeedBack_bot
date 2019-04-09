@@ -2,7 +2,7 @@ import logging
 
 import telebot
 
-from source.config import TOKEN, ADMIN
+from source.config import TOKEN, ADMIN, CHAT
 from source.log import log
 from source.variables import *
 
@@ -24,7 +24,7 @@ def initial_bot(use_logging=True, level_name='DEBUG'):
     @bot.callback_query_handler(func=lambda call: call.data in ['approve'])
     def callback_handler(call):
         try:
-            bot.send_message(call.from_user.id, call.message.text)
+            bot.send_message(CHAT, call.message.text)
         except:
             pass
 

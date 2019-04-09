@@ -1,9 +1,9 @@
 TOKEN = '818500774:AAHR54f3QKATkFQvmok-D0kVzKEuLUcvuGM'
-CHAT = ''
+CHAT = '-1001305977705'
 ADMIN = 284832147
 PROXY = {'https': 'socks5://35.227.157.59:1080'}
-USE_PROXY = True
-USE_WEB_HOOK = False
+USE_PROXY = False
+USE_WEB_HOOK = True
 
 WEBHOOK_HOST = 'smirnovan.ru'
 WEBHOOK_PORT = 8443  # 443, 80, 88 or 8443 (port need to be 'open')
